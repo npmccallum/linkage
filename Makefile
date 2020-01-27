@@ -1,5 +1,3 @@
-.PHONY = all clean
-
 all: dyn/target/debug/dyn ent/target/x86_64-unknown-linux-musl/debug/ent noe/target/debug/noe
 
 clean:
@@ -21,3 +19,5 @@ noe/target/debug/noe:
 	cargo build --manifest-path=noe/Cargo.toml -Z extra-link-arg
 	file $@
 	$@
+
+.PHONY: all clean
