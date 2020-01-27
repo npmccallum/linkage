@@ -9,7 +9,7 @@ Each binary (`dyn`, `ent` and `noe`) uses a library (`msg`) to define the
 message printed to standard output, demonstrating the use of a library in
 each context.
 
-Building the `noe` binary currently requies (this patch to cargo)[linkarg].
+Building the `noe` binary currently requies [this patch to cargo][linkarg].
 
 # The State of Rust
 
@@ -17,7 +17,7 @@ Rust is a great language for systems programming. But the usability of cargo
 for low-level things isn't great.
 
 1. You can't have a binary as a dependency. This means, for example, you
-   can't build a BIOS as part of your VMM. (See this)[bindep] for more
+   can't build a BIOS as part of your VMM. [See this][bindep] for more
    information.
 
 2. Building a static binary requires you to cross compile. This breaks all
@@ -26,9 +26,9 @@ for low-level things isn't great.
    the crate in a non-cross-compiled workspace and using rls.
 
 3. Building a static binary without an entry point (that is, without any
-   system stuff at all) requires you to (patch cargo)[linkarg], use an
+   system stuff at all) requires you to [patch cargo][linkarg], use an
    unstable option and resort to non-portable linker flags. A potential
-   solution for that (exists here)[noentry]. But that effort appears to
+   solution for that [exists here][noentry]. But that effort appears to
    have stalled.
 
 4. You can specify a cross-compilation target with `.cargo/config` but it
