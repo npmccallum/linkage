@@ -5,9 +5,9 @@ using Rust:
   * static binary with the standard entry point
   * static binary with no entry point
 
-Each binary (`dyn`, `ent` and `noe`) uses a library to define the message
-printed to standard output, demonstrating the use of a library in each
-context.
+Each binary (`dyn`, `ent` and `noe`) uses a library (`msg`) to define the
+message printed to standard output, demonstrating the use of a library in
+each context.
 
 Building the `noe` binary currently requies (this patch to cargo)[linkarg].
 
