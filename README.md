@@ -35,6 +35,9 @@ for low-level things isn't great.
    doesn't work when you build as a dependency, as part of a workspace or
    even using `cargo build --manifest-path=...`.
 
+5. As far as I can tell, it is impossible to create a static PIE binary,
+   which has numerous security benefits.
+
 [linkarg]: https://github.com/rust-lang/cargo/pull/7811
 [bindep]: https://github.com/rust-lang/cargo/pull/7804
 [noentry]: https://github.com/rust-lang/rfcs/pull/2735/files
